@@ -1,0 +1,11 @@
+#AJG23005 中 天花
+#講義や課題に関するコメント
+#同じカードを二度引かないようにするためのアイデアを考えるのが難しかった。
+#ファイルが多いので、頭が混乱してなかなか実装が進まず苦しかった。
+CXX = g++
+
+pokergame: report-3_poker.o report-3-AJG23005_main.o report-3-AJG23005_pokergame.o
+	$(CXX) -o pokergame.exe report-3_poker.o report-3-AJG23005_main.o report-3-AJG23005_pokergame.o
+
+clean:
+	rm -f pokergame.exe report-3_poker.o report-3-AJG23005_main.o report-3-AJG23005_pokergame.o
