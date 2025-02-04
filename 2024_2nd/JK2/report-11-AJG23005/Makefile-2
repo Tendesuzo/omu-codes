@@ -1,0 +1,5 @@
+CC = g++
+
+report-11-2-AJG23005: report-11-2-AJG23005.o ex2image.o
+report-11-2-AJG23005.o: report-11-2-AJG23005.cpp ex2image.h
+ex2image.o: ex2image.cpp ex2image.h

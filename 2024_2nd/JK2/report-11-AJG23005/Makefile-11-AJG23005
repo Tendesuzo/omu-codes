@@ -1,0 +1,7 @@
+#AJG23005 中 天花
+
+CC = g++
+
+sample: sample.o ex2image.o
+sample.o: sample.cpp ex2image.h
+ex2image.o: ex2image.cpp ex2image.h
